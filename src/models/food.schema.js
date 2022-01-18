@@ -2,12 +2,13 @@
 'use strict';
 
 const Food = (sequelize, DataTypes) => sequelize.define('Food', {
-  text: {
+  food: {
     type: DataTypes.STRING,
     allowNull: false,
   },
-  food: {
-    type: DataTypes.STRING,
+  price: {
+    type: DataTypes.INTEGER,
+    allowNull: false,
   },
 });
 
